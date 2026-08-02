@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #2D6A4F;
+  --color-primary-light: #40916C;
+  --color-primary-dark: #1B4332;
+  --color-accent: #F59E0B;
+  --color-accent-hover: #D97706;
+  --color-surface-50: #fcfbf8;
+  --color-surface-100: #f5efe7;
+  --color-surface-card: #ffffff;
+  --color-card-green: #eef8f0;
+  --color-dark-bg: #ffffff;
+  --color-dark-card: #ffffff;
+  --color-dark-border: #E7E0D3;
+  --color-text-primary: #1E2A2A;
+  --color-text-secondary: #5E6A68;
+  --color-text-light: #374151;
+  --font-sans: Inter, sans-serif;
+  --shadow-soft: 0 8px 30px -12px rgba(15, 23, 42, 0.16);
+  --shadow-hover: 0 14px 40px -12px rgba(45, 106, 79, 0.24);
+  --shadow-dark-soft: 0 8px 28px -10px rgba(0, 0, 0, 0.4);
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    @apply bg-[#fcfbf8] text-text-primary transition-colors duration-300 antialiased;
+  }
+
+  /* Keep the site bright even when the "dark" class is present: use light surfaces */
+  .dark body {
+    @apply bg-[#fcfbf8] text-text-primary;
+  }
+
+  .dark .bg-surface-card,
+  .dark .bg-surface-50,
+  .dark .bg-surface-100 {
+    @apply bg-surface-card;
+  }
+
+  .dark .text-text-primary {
+    @apply text-text-primary;
+  }
+
+  .dark .text-text-secondary {
+    @apply text-text-secondary;
+  }
+}
+
+/* Custom Scrollbar for a more premium look */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full; 
+}
+.dark ::-webkit-scrollbar-thumb {
+  @apply bg-dark-border rounded-full; 
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-light; 
+}
+
+/* Glassmorphism */
+.glass {
+  @apply bg-white/90 backdrop-blur-lg border border-[#e7e0d3]/80 shadow-[0_10px_35px_rgba(15,23,42,0.06)];
+}
+.dark .glass {
+  @apply bg-dark-card/70 backdrop-blur-lg border border-white/5;
+}
+
+/* Premium Gradient */
+.bg-gradient-premium {
+  background: linear-gradient(135deg, #2D6A4F, #40916C);
+}

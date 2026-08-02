@@ -1,0 +1,64 @@
+<template>
+  <div class="bg-surface-50 dark:bg-dark-bg min-h-screen py-16">
+    <div class="max-w-6xl mx-auto px-6 lg:px-12">
+      <div class="overflow-hidden rounded-[2rem] border border-gray-100 bg-surface-card shadow-soft dark:border-dark-border dark:bg-dark-card">
+        <div class="relative overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80"
+            alt="Pemandangan pegunungan dan alam"
+            class="h-[320px] w-full object-cover md:h-[420px]"
+          />
+          <div class="absolute inset-0 bg-gradient-to-r from-[#0f172a]/80 via-[#0f172a]/50 to-transparent"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-50/90 via-transparent to-transparent dark:from-dark-bg/80"></div>
+          <div class="absolute inset-0 flex items-end p-8 md:p-12">
+            <div class="max-w-2xl">
+              <p class="mb-3 inline-flex rounded-full border border-white/20 bg-white/10 px-3 py-1 text-sm font-semibold uppercase tracking-[0.25em] text-white backdrop-blur-md">
+                Petualangan dimulai dari sini
+              </p>
+              <h1 class="text-4xl font-extrabold tracking-tight text-white md:text-6xl">Cerita Kami</h1>
+              <p class="mt-4 text-base leading-relaxed text-slate-100 md:text-lg">
+                Menyatukan kebutuhan outdoor premium dengan semangat menjelajah alam secara bertanggung jawab.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-8 md:p-12 lg:p-16">
+          <div class="prose prose-lg max-w-none text-text-secondary dark:prose-invert dark:text-gray-300">
+            <p class="mb-6 text-xl font-medium leading-relaxed text-text-primary dark:text-gray-200">
+              WildCamp didirikan pada tahun 2026 dengan satu visi yang jelas: menyediakan perlengkapan outdoor premium yang menginspirasi lebih banyak orang untuk mengeksplorasi alam bebas.
+            </p>
+            <p class="mb-8 leading-relaxed">
+              Kami percaya bahwa alam adalah tempat terbaik untuk menemukan jati diri, membangun karakter, dan menciptakan kenangan tak terlupakan. Oleh karena itu, kami berkomitmen untuk mendukung setiap langkah petualangan Anda dengan peralatan yang aman, nyaman, dan tangguh di segala medan.
+            </p>
+
+            <div class="mb-12 grid grid-cols-1 gap-6 md:grid-cols-3 not-prose">
+              <div class="rounded-2xl border border-gray-100 bg-surface-50 p-6 shadow-sm dark:border-dark-border dark:bg-dark-bg">
+                <h3 class="mb-2 font-bold text-text-primary dark:text-text-primary">Peralatan Berkualitas</h3>
+                <p class="text-sm text-text-secondary">Produk original tersertifikasi dari brand terkemuka dunia.</p>
+              </div>
+              <div class="rounded-2xl border border-gray-100 bg-surface-50 p-6 shadow-sm dark:border-dark-border dark:bg-dark-bg">
+                <h3 class="mb-2 font-bold text-text-primary dark:text-text-primary">Layanan Unggul</h3>
+                <p class="text-sm text-text-secondary">Pengalaman belanja terbaik dengan dukungan expert.</p>
+              </div>
+              <div class="rounded-2xl border border-gray-100 bg-surface-50 p-6 shadow-sm dark:border-dark-border dark:bg-dark-bg">
+                <h3 class="mb-2 font-bold text-text-primary dark:text-text-primary">Komunitas di Utama</h3>
+                <p class="text-sm text-text-secondary">Mendukung kegiatan konservasi alam dan edukasi.</p>
+              </div>
+            </div>
+
+            <div class="mt-12 rounded-[1.75rem] bg-gradient-to-r from-primary via-primary-light to-accent p-8 text-white shadow-hover md:p-10">
+              <h2 class="mb-4 text-3xl font-extrabold tracking-tight">Misi Kami</h2>
+              <p class="mx-auto mb-8 max-w-2xl text-base leading-relaxed text-white/90">
+                Membantu setiap pecinta alam bersiap lebih baik, menjelajah lebih aman, dan merawat alam dengan penuh tanggung jawab.
+              </p>
+              <button class="rounded-full bg-white px-8 py-3 font-bold text-primary transition-colors hover:bg-surface-50">
+                Gabung Komunitas
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
